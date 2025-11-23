@@ -13,7 +13,7 @@ data=[]
 labels=[]
 
 for dir in os.listdir(DATA_DIR):
-    for file in os.listdir(os.path.join(DATA_DIR, dir))[:1]:
+    for file in os.listdir(os.path.join(DATA_DIR, dir))[:10]:
         data_aux=[]
         img = cv2.imread(os.path.join(DATA_DIR, dir, file))
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
